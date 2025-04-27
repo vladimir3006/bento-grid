@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400 500;
+    font-display: swap;
+    src: url("/assets/fonts/DMSans-VariableFont_opsz,wght.ttf");
+  }
+
+  @font-face {
+    font-family: DM Sans Italic;
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf");
+  }
+
+@theme {
+    --color-purple-100: hsl(254, 88%, 90%);
+    --color-purple-500: hsl(256, 67%, 59%);
+    --color-yellow-100: hsl(31, 66%, 93%);
+    --color-yellow-500: hsl(39, 100%, 71%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 7%);
+
+    --font-dmsans: "DM Sans";
+    --font-italic: "DM Sans Italic";
+
+}
+
+@layer components {
+    .grid-layout-4column{
+      @media (min-width: theme('screens.md')) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+          "create social    social     schedule"
+          "create social    social     schedule"
+          "create accounts  consistent schedule"
+          "ai     accounts  consistent schedule"
+          "ai     audience  grow       grow"
+          "ai     audience  grow       grow";
+
+        .area-create { grid-area: create; } 
+        .area-social { grid-area: social; }
+        .area-schedule { grid-area: schedule; }
+        .area-accounts { grid-area: accounts; }
+        .area-consistent { grid-area: consistent; }
+        .area-ai { grid-area: ai; }
+        .area-audience { grid-area: audience; }
+        .area-grow { grid-area: grow; }
+
+
+      }
+
+    }
+  }
