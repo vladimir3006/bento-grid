@@ -8,6 +8,6 @@ export default defineConfig({
         plugins: [tailwindcss()],
       },
 
-      site: "https://github.com/vladimir3006",
+      site: " https://vladimir3006.github.io",
       base: "/bento-grid/",
 });
