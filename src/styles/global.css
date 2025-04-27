@@ -5,7 +5,7 @@
     font-style: normal;
     font-weight: 400 500;
     font-display: swap;
-    src: url("/assets/fonts/DMSans-VariableFont_opsz,wght.ttf");
+    src: url("/bento-grid/assets/fonts/DMSans-VariableFont_opsz,wght.ttf");
   }
 
   @font-face {
@@ -13,7 +13,7 @@
     font-style: italic;
     font-weight: 400;
     font-display: swap;
-    src: url("/assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf");
+    src: url("/bento-grid/assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf");
   }
 
 @theme {
